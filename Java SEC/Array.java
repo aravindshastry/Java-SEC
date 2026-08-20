@@ -1,26 +1,15 @@
-import java.util.Scanner;
+// Arrays
 
-public class Array {
+class Arrays {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        int a[] = new int[4];
+        a[0] = 12;
+        a[1] = 45;
+        a[2] = 47;
+        a[3] = 76;
+        for (int i = 0; i < 4; i++) {
+            System.out.println(a[i]);
 
-        System.out.print("Enter array size: ");
-        int n = sc.nextInt();
-
-        int[] arr = new int[n];
-
-        System.out.println("Enter " + n + " elements:");
-
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
         }
-
-        System.out.println("Your array:");
-
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
-
-        sc.close();
     }
 }
