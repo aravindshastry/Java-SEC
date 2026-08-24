@@ -1,6 +1,6 @@
 // Arrays
 
-class Arrays {
+class Array{
     public static void main(String[] args) {
         int a[] = new int[4];
         a[0] = 12;
