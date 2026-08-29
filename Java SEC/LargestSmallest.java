@@ -1,3 +1,5 @@
+//Program to fing largest and samllest number in array.
+
 import java.util.Scanner;
 
 public class LargestSmallest {
