@@ -11,12 +11,12 @@ public class VowelCount {
         int count = 0;
 
         for (int i = 0; i < text.length(); i++) {
-            char ch = text.charAt(i);
+            char chr = text.charAt(i);
 
-            if (ch == 'a' || ch == 'e' || ch == 'i' ||
-                ch == 'o' || ch == 'u' ||
-                ch == 'A' || ch == 'E' || ch == 'I' ||
-                ch == 'O' || ch == 'U') {
+            if (chr == 'a' || chr == 'e' || chr == 'i' ||
+                chr == 'o' || chr == 'u' ||
+                chr == 'A' || chr == 'E' || chr == 'I' ||
+                chr == 'O' || chr == 'U') {
 
                 count++;
             }
