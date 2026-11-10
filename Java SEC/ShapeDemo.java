@@ -6,7 +6,7 @@ abstract class Shape {
     }
 }
 
-class Circle extends Shape {
+class CircleShape extends Shape {
     double radius = 7;
 
     double calculateArea() {
@@ -25,7 +25,8 @@ class Rectangle extends Shape {
 
 public class ShapeDemo {
     public static void main(String[] args) {
-        Circle c = new Circle();
+
+        CircleShape c = new CircleShape();
         Rectangle r = new Rectangle();
 
         System.out.println("Circle:");

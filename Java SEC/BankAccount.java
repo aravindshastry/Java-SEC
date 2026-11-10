@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 class BankAccount {
     int accNo;
     String holderName;
@@ -26,7 +24,7 @@ class BankAccount {
             balance -= amount;
             System.out.println("Withdrawn: " + amount);
             System.out.println("Remaining Balance: " + balance);
-        } else if (amount > balance) {
+        } else if (amount > balance && amount > 0) {
             System.out.println("Insufficient balance.");
         } else {
             System.out.println("Invalid withdrawal amount.");
@@ -41,6 +39,7 @@ class BankAccount {
 
     public static void main(String[] args) {
         BankAccount acc = new BankAccount(101, "Alex", 5000.0);
+
         acc.displayDetails();
         acc.deposit(1500.0);
         acc.withdraw(2000.0);

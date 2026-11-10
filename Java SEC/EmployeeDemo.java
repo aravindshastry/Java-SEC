@@ -1,4 +1,4 @@
-abstract class Employee {
+abstract class EmployeeBase {
 
     abstract void calculateSalary();
 
@@ -7,7 +7,7 @@ abstract class Employee {
     }
 }
 
-class Developer extends Employee {
+class Developer extends EmployeeBase {
 
     void calculateSalary() {
         System.out.println("Salary: 50000");

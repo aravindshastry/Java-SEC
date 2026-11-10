@@ -1,5 +1,5 @@
-
 class MyResource implements AutoCloseable {
+
     MyResource() {
         System.out.println("Resource opened");
     }
@@ -8,9 +8,14 @@ class MyResource implements AutoCloseable {
         System.out.println("Resource closed");
     }
 
+    void useResource() {
+        System.out.println("Using resource");
+    }
+
     public static void main(String[] args) {
+
         try (MyResource r = new MyResource()) {
-            System.out.println("Using resource");
+            r.useResource();
         }
     }
 }
